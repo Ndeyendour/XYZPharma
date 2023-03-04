@@ -1,0 +1,5 @@
+import { Investor } from "./investors";
+
+
+   
+    

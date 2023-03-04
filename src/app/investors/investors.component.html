@@ -1,0 +1,100 @@
+<h4>DETAILS QUATER</h4><br>
+
+<h6>Quarterdetails available of: <span> Q12020</span><span> Q22019</span><span> Q32018</span> <span> Q42017</span> <span> Q52016</span> <span> Q62015</span> <span> Q72014</span></h6>
+<div class="row">
+<div class="col s12">
+  
+<!-- <div *ngFor="investor of investorList"> -->
+  
+    <div class="col s3">
+      <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" class="form-control" id="name"
+                  
+                 [(ngModel)]="name" name="name"
+                 />
+      </div>  
+    </div>  
+        
+      <div class="col s3"> 
+      <div class="form-group">
+          <label for="name">Year</label>
+          <input type="text" class="form-control" id="year"
+                 [(ngModel)]="year" name="year"/>
+               
+      </div>
+      </div>
+      <br>
+      <br>
+      <button (click)="getQDetails()"class="teal lighten-2">GetDetails</button>
+  </div>
+</div>
+  <span *ngIf="!investorDetail">
+    
+    {{errorMessage}}
+  </span>
+<div *ngIf="investorDetail">
+  
+<div class="container">
+  <div class="row">
+    <table>
+      <thead>
+        <tr>
+          <th>Quater</th>
+          <th>Sales</th>
+          <th>Other Income</th>
+          <th>Gross Profit</th>
+          <th>Depreciation</th>
+          <th>Interest</th>
+          <th>Tax</th>
+          <th>Net Profit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{investorDetail.name}}{{investorDetail.year}}</td>
+          <td>{{investorDetail.sales}}</td>
+          <td>{{investorDetail.otherincomes}}</td>
+          <td>{{investorDetail.grossprofit}}</td>
+          <td>{{investorDetail.depreciation}}</td>
+          <td>{{investorDetail.interst}}</td>
+          <td>{{investorDetail.tax}}</td>
+          <td>{{investorDetail.nextprofit}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+</div>
+     
+
+      
+
+
+<!-- <div *ngIf="myForm.controls['year'].invalid">
+  Only h3 *ngIf="!pokemon" class="center">Aucun pokémon à éditer...</h3> the above mentioned quater detail are currently available
+</div> -->
+
+ <!-- <h6 *ngIf="!investorDetail" class="">
+
+    <i class="small material-icons">adb</i> 
+    Only the above mentioned quater detail are currently available
+ 
+ </h6> -->
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+ 
